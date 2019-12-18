@@ -1,5 +1,5 @@
 # Download the installation package
-wget https://aka.ms/azcmagent -O ~/Install_linux_azcmagent.sh
+sudo wget https://aka.ms/azcmagent -O ~/Install_linux_azcmagent.sh
 
 # Install the connected machine agent. Omit the '--proxy "{proxy-url}"' parameters if proxy is not needed
 bash ~/Install_linux_azcmagent.sh

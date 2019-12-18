@@ -2,7 +2,7 @@
 sudo wget https://aka.ms/azcmagent -O ~/Install_linux_azcmagent.sh
 
 # Install the connected machine agent. Omit the '--proxy "{proxy-url}"' parameters if proxy is not needed
-bash ~/Install_linux_azcmagent.sh
+sudo bash ~/Install_linux_azcmagent.sh
 
 azcmagent connect \
   --service-principal-id "b8b0feed-07b3-42c6-b547-274b1ed4bba6" \

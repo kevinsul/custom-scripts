@@ -2,7 +2,7 @@
 Invoke-WebRequest -Uri https://aka.ms/AzureConnectedMachineAgent -OutFile AzureConnectedMachineAgent.msi
 
 # Install the package
-msiexec /i AzureConnectedMachineAgent.msi /l*v installationlog.txt /qn | Out-String
+msiexec /i AzureConnectedMachineAgent.msi /l*v installationlog.txt /qn
 
 & "$env:ProgramFiles\AzureConnectedMachineAgent\azcmagent.exe" connect `
   --service-principal-id "b8b0feed-07b3-42c6-b547-274b1ed4bba6" `
